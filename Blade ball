@@ -24,6 +24,7 @@ if mag == {value} then -- keep it like this, no touche :D
 game.ReplicatedStorage.Events.Parry:FireServer(player, 1) -- set at 1 = for less lag but less accurate, vice versa.
 
 ]]--
+print(value) -- Makes sure the script is working and it can past this line
 end)
 
 section1:Slider("Auto Parry Range",0,50,function(value)
@@ -33,6 +34,7 @@ findball()
 {value} = value
 
 --]]
+print(value) -- Makes sure the script is working and it can past this line
 end)
 
 section1:Slider("Rage Parry",16,50,function(value)
@@ -71,6 +73,7 @@ ID = Yeet
 end
     game.ServerStorage.HitSound.ID = ID
 ]]--
+print(val) -- Makes sure the script is working and it can past this line
 end)
 
 section1:Label("Testing")
