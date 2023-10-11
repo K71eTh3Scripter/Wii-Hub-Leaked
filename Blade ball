@@ -1,0 +1,82 @@
+local Fun = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/CheetoHub/main/newlib"))()
+
+
+--newlib 
+
+
+local a = Fun.Create('Main')
+
+local tab1 = a:Tab("Trolling")
+
+local section1 = tab1:Section('section')
+
+section1:Toggle("Auto Parry",function(value)
+    --[[
+function findball(ball, player)
+if ball.name == ball.name then
+ball:DistanceFromCharacter(player)
+
+findball()
+ball = game.workspace.ball
+if findball() then
+mag = ball:DistanceFromCharacter(player)
+if mag == {value} then -- keep it like this, no touche :D
+game.ReplicatedStorage.Events.Parry:FireServer(player, 1) -- set at 1 = for less lag but less accurate, vice versa.
+
+]]--
+end)
+
+section1:Slider("Auto Parry Range",0,50,function(value)
+   --[[
+
+findball()
+{value} = value
+
+--]]
+end)
+
+section1:Slider("Rage Parry",16,50,function(value)
+    num = value
+    print(num) -- Makes sure the script is working and it can past this line
+--[[
+local accuracy = num
+accuracy(plr)
+findball(ball)
+
+funcion teleportball(ball, plr, x,y,z)
+if ball.position = plr.character.position then
+return end
+else 
+plr.character.position = ball.position
+game.ReplicatedStorage.Events.Parry:FireServer(player, 2) -- set at 1 = for less lag but less accurate, vice versa. [Recommended: 2 because rage parry is already laggy.]
+
+
+]]--
+end)
+
+
+section1:Dropdown("Hit Sound",{"Explosion","Water","Yeet"},function(val)
+
+--[[
+local Explosion = 1849372619 -- Sound ID
+local Water = 28495727 -- Sound ID
+local Yeet = 2799377218 -- Sound ID
+local ID
+if val == Explosion then
+ID = Explosion
+elseif val == Water then
+ID = Water
+elseif value == Yeet then
+ID = Yeet
+end
+    game.ServerStorage.HitSound.ID = ID
+]]--
+end)
+
+section1:Label("Testing")
+
+section1:TextBox("Test",function(text)
+print(text)
+end)
+
+section1:Label('TEStInGGgG II')
