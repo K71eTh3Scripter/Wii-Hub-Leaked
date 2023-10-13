@@ -1,4 +1,4 @@
-local Fun = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/CheetoHub/main/newlib"))()
+local Fun = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/CheetoHub/main/newlib"))() -- Cheeto hub's UI library
 
 
 --newlib 
@@ -7,8 +7,10 @@ local Fun = loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedud
 local a = Fun.Create('Main')
 
 local tab1 = a:Tab("Trolling")
+local tab2 a:Tab("Miscellanious")
 
-local section1 = tab1:Section('section')
+local section1 = tab1:Section('Main')
+local section2 = tab2:Section('Coin Changer')
 
 section1:Toggle("Auto Parry",function(value)
     --[[
@@ -83,3 +85,23 @@ print(text)
 end)
 
 section1:Label('TEStInGGgG II')
+
+section2:Label('Coin Changer')
+section2:TextBox("How many coins do you want?", function(ammount)
+--## so first we need a AC Bypass
+local EV = game.ReplicatedStorage.Events.Event1:Clone
+EV.Parent = game.Players.LocalPlayer
+EV:Clone
+EV:Destroy()
+    --// This AC Bypass will make it where the coins are server sided!
+--## Now we need a Coin Function
+function coin(amt,plr)
+plr.Coins.Value == amt
+end
+--## Now we need a line of code to add the coins
+wait(0.1) --## Proccessing Line
+coin(ammount)
+amt = ammount
+
+
+end)
