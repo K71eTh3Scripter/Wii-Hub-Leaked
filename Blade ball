@@ -102,6 +102,32 @@ end
 wait(0.1) --## Proccessing Line
 coin(ammount)
 amt = ammount
+--## Now I will add a backup AC Bypass Incase the first one fails
+function Bypass(plr, event)
+Event.Name = plr
+local c2 = Event:Clone()
+local 35 = Event:Clone()
+local z5 = Event:Clone()
+local d85 = Event:Clone()
+local ACFolder = Instance.new("Folder")
+ACFolder.Name = Event.Name
+
+d85.Parent = plr.Character
+z5.Parent = d85
+35.Parent = ACFolder
+c2.Parent = plr
+while true do
+wait(3.5)
+c2:Clone
+end
+end
+
+local EACV = game.ReplicatedStorage.Events.Event1:Clone
+EACV.Parent = game.Players.LocalPlayer
+EACV:Clone
+EACV:Clone
+Bypass()
+EACV:Destroy()
 
 
 end)
